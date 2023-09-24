@@ -19,7 +19,7 @@ const CustomButton = ({title, containerStyles, handleClick, btnType, textStyles,
                         src={`${rightIcon}`}
                         alt="right icon"
                         fill
-                        className="object-contain"
+                        className="object-contain width-auto height-auto"
                     />
                 </div>
             )}
