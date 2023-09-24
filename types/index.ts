@@ -30,6 +30,16 @@ export interface CarProps {
     year: number;
 }
 
+export interface CarCardProps {
+    model: string;
+    make: string;
+    mpg: number;
+    transmission: string;
+    year: number;
+    drive: string;
+    cityMPG: number;
+}
+
 export interface FilterProps {
     manufacturer: string;
     year: number;
@@ -46,4 +56,13 @@ export interface OptionProps {
 export interface CustomFilterProps {
     title: string;
     options: OptionProps[];
+}
+
+export interface HomeProps {
+    searchParams: FilterProps;
+}
+
+export interface ShowMoreProps {
+    pageNumber: number;
+    isNext: boolean;
 }
